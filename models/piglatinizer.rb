@@ -16,7 +16,7 @@ class PigLatinizer
         while !"aeiouAEIOU".include?(word[i])
           i+=1
         end
-        result << "#{word[i..-1]+word[0..i-1]}ay "
+        result << "#{word[i..-1]+word[0..i-1]}ay"
       end
     end
     result.join(" ").strip
