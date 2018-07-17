@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end
 
   post '/piglatinize' do
-    
+    @text_to_piglatin = 
   end
 
 end
