@@ -1,14 +1,14 @@
 class PigLatinizer
 
-  attr_accessor :word
+  attr_accessor :phrase
 
   def initialize
   end
 
-  def piglatinize(text)
+  def piglatinize(phrase)
     text_split = text.split(' ')
     result = ""
-    text_split.each do |word| 
+    text_split.each do |word|
       if "aeiouAEIOU".include?(word[0])
         result += "#{word}way "
       else
@@ -22,4 +22,4 @@ class PigLatinizer
     result.strip
   end
 
-end 
+end
