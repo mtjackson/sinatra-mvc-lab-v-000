@@ -19,7 +19,7 @@ class PigLatinizer
         result << "#{word[i..-1]+word[0..i-1]}ay "
       end
     end
-    result.strip
+    result.join(" ")
   end
 
 end
