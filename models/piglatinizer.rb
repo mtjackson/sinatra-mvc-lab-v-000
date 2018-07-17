@@ -6,7 +6,7 @@ class PigLatinizer
   end
 
   def piglatinize(phrase)
-    text_split = phrase.split(' ')
+    text_split = phrase.split(" ")
     result = ""
     text_split.each do |word|
       if "aeiouAEIOU".include?(word[0])
